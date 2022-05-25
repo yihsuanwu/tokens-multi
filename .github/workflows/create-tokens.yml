@@ -13,10 +13,16 @@ jobs:
       - run: npm install
       # Transform Figma Tokens JSON to something Style Dictionary can read
       - run: npx token-transformer tokens.json tokens/global.json global
-      # Create a light theme, exclude the global tokens
-      - run: npx token-transformer tokens.json tokens/light.json global,light,theme global
+      # Create a colors theme, exclude the global tokens
+      - run: npx token-transformer tokens.json tokens/colors.json global,colors,theme global
       # Create a dark theme, exclude the global tokens
-      - run: npx token-transformer tokens.json tokens/dark.json global,dark,theme global
+      - run: npx token-transformer tokens.json tokens/typography-one.json global,typography-one,theme global
+      # Create a dark theme, exclude the global tokens
+      - run: npx token-transformer tokens.json tokens/typography-two.json global,typography-two,theme global
+      # Create a dark theme, exclude the global tokens
+      - run: npx token-transformer tokens.json tokens/typography-three.json global,typography-three,theme global
+      # Create a dark theme, exclude the global tokens
+      - run: npx token-transformer tokens.json tokens/theme.json global,theme,theme global
       # Convert tokens according to Style Dictionary config
       - run: node build.js
       # Add files that were created during a run, e.g. created files from style dictionary or token-transformer.
