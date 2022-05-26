@@ -14,13 +14,13 @@ jobs:
       # Transform Figma Tokens JSON to something Style Dictionary can read
       - run: npx token-transformer tokens.json tokens/tokens.json global
       # Create a colors theme, exclude the global tokens
-      - run: npx token-transformer tokens.json tokens/colors.json global
+      - run: npx token-transformer tokens.json tokens/colors.json global,colors global
       # Create a typography theme, exclude the global tokens
-      - run: npx token-transformer tokens.json tokens/typography-one.json global
+      - run: npx token-transformer tokens.json tokens/typography-one.json global,typography-one global
       # Create a typograhpy theme, exclude the global tokens
-      - run: npx token-transformer tokens.json tokens/typography-two.json global
+      - run: npx token-transformer tokens.json tokens/typography-two.json global,typography-two global
       # Create a typography theme, exclude the global tokens
-      - run: npx token-transformer tokens.json tokens/typography-three.json global
+      - run: npx token-transformer tokens.json tokens/typography-three.json global,typography-three global
       # Create a brand theme using a specific typography, exclude the global tokens
       - run: npx token-transformer tokens.json tokens/theme.json global,typography-two global
       # Convert tokens according to Style Dictionary config
