@@ -14,7 +14,7 @@ jobs:
       # Transform Figma Tokens JSON to something Style Dictionary can read
       - run: npx token-transformer tokens.json tokens/tokens.json global
       # Create a colors theme, exclude the global tokens
-      - run: npx token-transformer tokens.json tokens/colors.json global,colors,theme global
+      - run: npx token-transformer tokens.json tokens/colors.json global
       # Create a typography theme, exclude the global tokens
       #- run: npx token-transformer tokens.json tokens/typography-one.json global,colors,typography-one,theme global
       # Create a typograhpy theme, exclude the global tokens
