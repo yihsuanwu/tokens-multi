@@ -16,7 +16,7 @@ jobs:
       # Create a colors theme, exclude the global tokens
       - run: npx token-transformer tokens.json tokens/colors.json global
       # Create a typography theme, exclude the global tokens
-      #- run: npx token-transformer tokens.json tokens/typography-one.json global,colors,typography-one,theme global
+      - run: npx token-transformer tokens.json tokens/typography-one.json global
       # Create a typograhpy theme, exclude the global tokens
       #- run: npx token-transformer tokens.json tokens/typography-two.json global,colors,typography-two,theme global
       # Create a typography theme, exclude the global tokens
