@@ -18,11 +18,11 @@ jobs:
       # Create a typography theme, exclude the global tokens
       - run: npx token-transformer tokens.json tokens/typography-one.json global
       # Create a typograhpy theme, exclude the global tokens
-      #- run: npx token-transformer tokens.json tokens/typography-two.json global,colors,typography-two,theme global
+      - run: npx token-transformer tokens.json tokens/typography-two.json global
       # Create a typography theme, exclude the global tokens
-      #- run: npx token-transformer tokens.json tokens/typography-three.json global,colors,typography-three,theme global
+      - run: npx token-transformer tokens.json tokens/typography-three.json global
       # Create a dark theme, exclude the global tokens
-      #- run: npx token-transformer tokens.json tokens/theme.json global, theme,theme global
+#       - run: npx token-transformer tokens.json tokens/theme.json global, theme,theme global
       # Convert tokens according to Style Dictionary config
       - run: node build.js
       # Add files that were created during a run, e.g. created files from style dictionary or token-transformer.
