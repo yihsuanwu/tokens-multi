@@ -47,7 +47,7 @@ console.log('Build started...');
 
 // PROCESS THE DESIGN TOKENS FOR THE DIFFEREN BRANDS AND PLATFORMS
 
-['global', 'colors', 'typography-one', 'typography-two', 'typography-three', 'theme'].map(function (theme) {
+['global', 'colors', 'theme'].map(function (theme) {
 
     console.log('\n==============================================');
     console.log(`\nProcessing: [${theme}]`);
