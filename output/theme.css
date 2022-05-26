@@ -1,9 +1,9 @@
 .theme-theme {
-          --font-families-headlines: Heebo;
-  --font-families-body: Heebo;
-  --font-families-nav: Heebo;
+          --font-families-headlines: Inter;
+  --font-families-body: Inter;
+  --font-families-nav: Inter;
   --font-weights-headlines-300: Light;
-  --font-weights-headlines-400: Book;
+  --font-weights-headlines-400: Regular;
   --font-weights-headlines-600: Medium;
   --font-weights-headlines-700: Bold;
   --font-weights-body-300: Light;
@@ -42,17 +42,17 @@
   --letter-spacing-captions: 0%;
   --letter-spacing-nav-mobile-l1: 10%;
   --letter-spacing-nav-mobile-l2: 10%;
-  --letter-spacing-nav-desktop-l1: 10%;
+  --letter-spacing-nav-desktop-l1: 0%;
   --letter-spacing-nav-desktop-l2: 10%;
   --paragraph-spacing-default: 0;
   --text-case-none: none;
   --text-case-captions: none;
   --text-case-buttons: none;
   --text-case-body: none;
-  --text-case-headlines: capitalize;
-  --text-case-nav-mobile-l1: none;
+  --text-case-headlines: none;
+  --text-case-nav-mobile-l1: capitalize;
   --text-case-nav-mobile-l2: none;
-  --text-case-nav-desktop-l1: none;
+  --text-case-nav-desktop-l1: capitalize;
   --text-case-nav-desktop-l2: none;
   --text-decoration-none: none;
   --text-decoration-buttons: none;

@@ -1,15 +1,15 @@
 {
   "fontFamilies": {
     "headlines": {
-      "value": "Heebo",
+      "value": "Inter",
       "type": "fontFamilies"
     },
     "body": {
-      "value": "Heebo",
+      "value": "Inter",
       "type": "fontFamilies"
     },
     "nav": {
-      "value": "Heebo",
+      "value": "Inter",
       "type": "fontFamilies"
     }
   },
@@ -20,7 +20,7 @@
         "type": "fontWeights"
       },
       "400": {
-        "value": "Book",
+        "value": "Regular",
         "type": "fontWeights"
       },
       "600": {
@@ -199,7 +199,7 @@
       },
       "desktop": {
         "l1": {
-          "value": "10%",
+          "value": "0%",
           "type": "letterSpacing"
         },
         "l2": {
@@ -233,13 +233,13 @@
       "type": "textCase"
     },
     "headlines": {
-      "value": "capitalize",
+      "value": "none",
       "type": "textCase"
     },
     "nav": {
       "mobile": {
         "l1": {
-          "value": "none",
+          "value": "capitalize",
           "type": "textCase"
         },
         "l2": {
@@ -249,7 +249,7 @@
       },
       "desktop": {
         "l1": {
-          "value": "none",
+          "value": "capitalize",
           "type": "textCase"
         },
         "l2": {
