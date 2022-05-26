@@ -16,11 +16,11 @@ jobs:
       # Create a colors theme, exclude the global tokens
       - run: npx token-transformer tokens.json tokens/colors.json global
       # Create a typography theme, exclude the global tokens
-      - run: npx token-transformer tokens.json tokens/typography-one.json 
+      - run: npx token-transformer tokens.json tokens/typography-one.json global
       # Create a typograhpy theme, exclude the global tokens
-      - run: npx token-transformer tokens.json tokens/typography-two.json 
+      - run: npx token-transformer tokens.json tokens/typography-two.json global
       # Create a typography theme, exclude the global tokens
-      - run: npx token-transformer tokens.json tokens/typography-three.json 
+      - run: npx token-transformer tokens.json tokens/typography-three.json global
       # Create a brand theme using a specific typography, exclude the global tokens
       - run: npx token-transformer tokens.json tokens/theme.json global,typography-two global
       # Convert tokens according to Style Dictionary config
