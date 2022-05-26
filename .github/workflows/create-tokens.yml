@@ -12,15 +12,15 @@ jobs:
       # Install dependencies
       - run: npm install
       # Transform Figma Tokens JSON to something Style Dictionary can read
-      - run: npx token-transformer tokens.json tokens/global.json global
+      - run: npx token-transformer tokens.json tokens/tokens.json global
       # Create a colors theme, exclude the global tokens
-      - run: npx token-transformer tokens.json tokens/colors.json global,colors,theme global
+      #- run: npx token-transformer tokens.json tokens/colors.json global,colors,theme global
       # Create a typography theme, exclude the global tokens
-      - run: npx token-transformer tokens.json tokens/typography-one.json global,colors,typography-one,theme global
+      #- run: npx token-transformer tokens.json tokens/typography-one.json global,colors,typography-one,theme global
       # Create a typograhpy theme, exclude the global tokens
-      - run: npx token-transformer tokens.json tokens/typography-two.json global,colors,typography-two,theme global
+      #- run: npx token-transformer tokens.json tokens/typography-two.json global,colors,typography-two,theme global
       # Create a typography theme, exclude the global tokens
-      - run: npx token-transformer tokens.json tokens/typography-three.json global,colors,typography-three,theme global
+      #- run: npx token-transformer tokens.json tokens/typography-three.json global,colors,typography-three,theme global
       # Create a dark theme, exclude the global tokens
       #- run: npx token-transformer tokens.json tokens/theme.json global, theme,theme global
       # Convert tokens according to Style Dictionary config
